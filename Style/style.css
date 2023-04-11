@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Baba';
+    src: url('/fontes/BebasNeue-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf') format('opentype');
+}
+/* Cores do Projeto
+
+#c5edb6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+
+*/
+:root{
+
+    --cor01: #c5edb6;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;
+
+    --fonte-padrao: arial, Verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Baba';
+    --fonte-Android: 'android'; 
+
+
+}
+
+
+*{
+    margin: 0px;
+    padding: 3px;
+}
+
+
+body{
+    background-color: var(--cor01);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 20px;
+
+
+    
+    
+}
+
+header  h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px black;
+
+}
+
+header  p{
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--cor05);
+    padding: 15px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.562);
+    
+}
+
+nav > a{
+    text-decoration: none;
+    padding: 10px;
+    transition: .5s;
+}
+
+nav > a:hover{
+    background-color: #2fa866;
+    border-radius: 5px;
+    
+    
+}
+ 
+ 
+
+
+
+a{
+    color: white;
+}
+
+main{
+    background-color: white;
+    min-width:300px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h1{
+    font-family: var(--fonte-Android);
+    color: var(--cor05);
+
+    
+}
+
+main h2{
+    font-family: var(--fonte-Android);
+}
+main a {
+    color: black;
+}
+
+main p{
+    text-align: justify;
+}
+
+img{
+display: block;
+margin: auto;
+
+}
+ aside h3{
+    text-align: center;
+    
+    background-color: #063d1e;
+ }
+
+ aside p{
+    text-align: justify;
+ }
+
+ div {
+    background-color: #83c9a3b6;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 10px 10px;
+
+ }
+
+ ul {
+    position: relative;
+    left: 40px;
+    column-count: 2;
+ }
+
+
+footer{
+    background-color: var(--cor06);
+    color: white;
+}
